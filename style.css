@@ -267,6 +267,7 @@ a {
 }
 
 .news-nav {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,6 +275,7 @@ a {
 }
 
 .news-nav-item {
+  flex-shrink: 0;
   width: 40px;
   height: 40px;
   background-color: #6f42c1;
@@ -297,6 +299,7 @@ a {
   grid-template-columns: repeat(4, 1fr);
   height: fit-content;
   padding: 50px 200px;
+  margin-top: 50px;
 }
 
 .footer .footer-item {
@@ -351,4 +354,14 @@ a {
   justify-content: center;
   align-items: center;
   padding: 100px 0;
+}
+
+.menu .fa-times,
+.header .menu_toggle {
+  display: none;
+}
+
+.subnav-mobile,
+.subnav2-mobile {
+  display: none;
 }

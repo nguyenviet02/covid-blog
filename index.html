@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
   <script src="./script.js" defer></script>
 </head>
 
@@ -17,13 +18,16 @@
     <div class="header-logo">
       <a href="index.html">Covid.</a>
     </div>
-    <ul class="header-nav">
+    <ul class="header-nav menu">
+      <i class="fas fa-times"></i>
       <li class="nav-item">
         <a href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#">Prevention</a>
-        <i class="fas fa-angle-down"></i>
+        <div class="prevention">
+          <a href="#">Prevention</a>
+          <i class="fas fa-angle-down"></i>
+        </div>
         <ul class="subnav">
           <li class="subnav-item">
             Stay at home
@@ -54,6 +58,49 @@
           </li>
         </ul>
       </li>
+      <ul class="subnav-mobile">
+        <li class="subnav-item">
+          Stay at home
+        </li>
+        <li class="subnav-item">
+          Keep social distancing
+        </li>
+        <li class="subnav-item">
+          Wear facemask
+        </li>
+        <li class="subnav-item">
+          Wash your hands
+        </li>
+        <li class="subnav-item">
+          <div class="morelink">
+            More Link
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <ul class="subnav2">
+            <li class="subnav-item">
+              Menu One
+            </li>
+            <li class="subnav-item">
+              Menu Two
+            </li>
+            <li class="subnav-item">
+              Menu Three
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+      <ul class="subnav2-mobile">
+        <li class="subnav-item">
+          Menu One
+        </li>
+        <li class="subnav-item">
+          Menu Two
+        </li>
+        <li class="subnav-item">
+          Menu Three
+        </li>
+      </ul>
       <li class="nav-item">
         <a href="#">Symptoms</a>
       </li>
@@ -67,6 +114,7 @@
         <a href="#">Contact</a>
       </li>
     </ul>
+    <div class="menu_toggle">☰</div>
   </section>
   <section class="blog-posts container">
     <h3 class="title1">UPDATES</h3>
